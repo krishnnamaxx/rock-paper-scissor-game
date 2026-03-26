@@ -63,7 +63,7 @@ project/
 
 ## 📸 Preview
 
-(Add a screenshot here later)
+![Game Preview](images/preview.png)
 
 ---
 
