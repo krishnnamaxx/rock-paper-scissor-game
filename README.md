@@ -11,6 +11,7 @@ A simple and fun **Rock Paper Scissors** game built using **HTML, CSS, and JavaS
 * 💾 Score saved using Local Storage
 * 🎨 Clean and colorful UI
 * 🔁 Reset score button
+* ▶️ AutoPlay button
 
 ---
 
