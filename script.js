@@ -5,6 +5,21 @@
         }; 
         updateScore();
          // we are retrieving the score object from local storage and converting it back to an object using JSON.parse() method
+         let isAutoPlaying=false;
+         let intervalId;
+         function autoPlay(){
+            if(!isAutoPlaying){
+           intervalId=setInterval(function(){
+                const playerMove=pickComputerMove();
+             playGame(playerMove);
+            },1000);
+            isAutoPlaying=true;
+         }
+         else{
+             clearInterval(intervalId);
+             isAutoPlaying=false;
+         }
+         };
         function playGame(playerMove){
              const computerChoice=pickComputerMove();
              let result='';
@@ -82,3 +97,5 @@
             }
             return computerChoice;
         }
+
+      
